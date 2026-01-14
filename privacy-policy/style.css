@@ -110,3 +110,41 @@
         .footer-bottom a:hover {
             color: #ffffff;
         }
+
+        @media (max-width: 768px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+            width: 100%;
+        }
+
+        thead {
+            display: none;
+        }
+
+        tbody tr {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        tbody td {
+            text-align: left;
+            padding: 6px 0;
+            border: none;
+        }
+
+        tbody td::before {
+            content: attr(data-label);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 4px;
+            color: #555;
+        }
+    }
